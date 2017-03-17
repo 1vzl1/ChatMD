@@ -182,14 +182,14 @@ bot.dialog('/none', [
     .attachments([
         new builder.HeroCard(session)
             .title(diag)
-            //.subtitle(diag)
+            .subtitle(diag)
             //.text(subtext)
             .images([
                 builder.CardImage.create(session, imageurl)
             ])
             .tap(builder.CardAction.openUrl(session, url))
     ]);
-    //session.send(msg);
+    session.send(msg);
     builder.Prompts.choice(session, Dialog.bestMeds + medList + Dialog.seeDoctor, ["Yes please!", "No thanks!"]);
   },
   function(session,results){
