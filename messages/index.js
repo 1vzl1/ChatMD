@@ -183,7 +183,7 @@ bot.dialog('/none', [
         new builder.HeroCard(session)
             .title(diag)
             //.subtitle(diag)
-            .text(subtext)
+            //.text(subtext)
             .images([
                 builder.CardImage.create(session, imageurl)
             ])
