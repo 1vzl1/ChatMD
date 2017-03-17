@@ -189,7 +189,7 @@ bot.dialog('/none', [
             ])
             .tap(builder.CardAction.openUrl(session, url))
     ]);
-    session.send(msg);
+    //session.send(msg);
     builder.Prompts.choice(session, Dialog.bestMeds + medList + Dialog.seeDoctor, ["Yes please!", "No thanks!"]);
   },
   function(session,results){
